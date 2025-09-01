@@ -1,0 +1,83 @@
+<!--José Daniel Meléndez Córdova 628305-->
+<!--Doy mi palabra que he realizado esta actividad con integridad académica-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Registro para Torneo de Videojuegos</h1>
+        <hr>
+        <form>
+        <table border="1" cellpadding="5">
+            <tr>
+                <td>Nombre del jugador:</td>
+                <td>
+                    <input type="text" minlength="3" maxlength="15" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Correo:</td>
+                <td>
+                    <input type="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Edad:</td>
+                <td>
+                    <input type="number" min="12" max="40" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Nickname:</td>
+                <td>
+                    <input type="text" pattern="[A-Za-z0-9]+">
+                </td>
+            </tr>
+            <tr>
+                <td>Categoría:</td>
+                <td>
+                    <label>
+                        <input type="radio" name="categoria" value="principiante" required>
+                        Principiante
+                    </label>
+                    <label>
+                        <input type="radio" name="categoria" value="intermedio" required>
+                        Intermedio
+                    </label>
+                    <label>
+                        <input type="radio" name="categoria" value="experto" required>
+                        Experto
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Juegos favoritos:</td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="categoria" value="principiante">
+                        FIFA
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="intermedio">
+                        LoL
+                    </label>
+                    <label>
+                        <input type="checkbox" name="categoria" value="experto">
+                        Minecraft
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Fecha de inscripción:</td>
+                <td>
+                    <input type="date" min="2025-01-01" max="2025-12-31">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restablecer">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
